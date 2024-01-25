@@ -12,12 +12,38 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!--Google font Manrope-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!--tailwind custom style-->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <!--custom style-->
+
+    <style>
+      .font-manrope {
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
   </head>
-  <body>
-    <header>
+  <body class="font-manrope">
+    <header class="md:container md:mx-auto">
       <nav>
         <div class="navbar bg-base-100">
-          <div class="navbar-start">
+          <div class="flex-1">
             <div class="dropdown">
               <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                 <svg
@@ -37,9 +63,9 @@
               </div>
               <ul
                 tabindex="0"
-                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 text-base shadow bg-base-100 rounded-box w-52"
               >
-                <li><a>Home</a></li>
+                <li><a class="text-orange-600">Home</a></li>
                 <li>
                   <a>About</a>
                 </li>
@@ -48,20 +74,26 @@
                 <li><a>Contact</a></li>
               </ul>
             </div>
-            <a class="btn btn-ghost text-xl"> Hockey's</a>
+            <a class="btn btn-ghost text-4xl">
+              <span class="text-neutral-900">Hockey</span
+              ><span class="text-red-500">’</span>
+              <span class="text-neutral-900">s</span></a
+            >
           </div>
           <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1">
-              <li><a>Home</a></li>
+            <ul class="menu menu-horizontal px-1 text-base">
+              <li><a class="text-red-500 font-bold">Home</a></li>
               <li>
                 <a> About</a>
               </li>
-              <li><a>Pages</a></li>
-              <li><a>Blog</a></li>
-              <li><a>Contact</a></li>
+              <li><a class="text-zinc-700 font-normal text-base">Pages</a></li>
+              <li><a class="text-zinc-700 font-normal text-base">Blog</a></li>
+              <li>
+                <a class="text-zinc-700 font-normal text-base">Contact</a>
+              </li>
             </ul>
           </div>
-          <div class="navbar-end">
+          <div class="">
             <button class="btn btn-ghost btn-circle">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -78,12 +110,677 @@
                 />
               </svg>
             </button>
-            <a class="btn btn-error">Get Ticket</a>
+            <a class="btn btn-error text-white font-bold">Get Ticket</a>
           </div>
         </div>
       </nav>
+      <!--slider or carousel-->
+      <div class="carousel w-full relative my-20">
+        <!--slide 1-->
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="Images/1.png" class="w-full" />
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <!--slide 2-->
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="Images/1.png" class="w-full" />
+          <div
+            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+          >
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div
+          class="w-[566px] h-[165px] p-8 bg-neutral-900 rounded-2xl flex-col justify-start items-start gap-4 inline-flex absolute bottom-20 right-0"
+        >
+          <h3 class="text-white text-2xl font-extrabold">
+            Meet all the heroes from the field
+          </h3>
+          <p
+            class="w-[502px] text-white text-opacity-60 text-base font-bold leading-relaxed"
+          >
+            Are you referring to heroes in a specific context, such as sports,
+            entertainment, or some other field? The more information you
+            provide, the better I can assist you.
+          </p>
+        </div>
+      </div>
     </header>
-    <main></main>
-    <footer></footer>
+    <main class="md:container md: mx-auto">
+      <div class="border border-dashed p-10">
+        <div class="text-center text-neutral-900 text-4xl font-extrabold p-6">
+          Professional Hockeys Club
+        </div>
+        <div class="text-center">
+          Certainly! Professional hockey has many talented players, and there
+          are numerous clubs around the world. <br />
+          As of my last knowledge update in January 2024, here are some notable
+          <br />
+          professional hockey clubs and a few players associated with them
+        </div>
+      </div>
+
+      <div class="p-20">
+        <div class="radial-progress" style="--value: 100" role="progressbar">
+          100%
+        </div>
+        <div class="radial-progress" style="--value: 100" role="progressbar">
+          100%
+        </div>
+        <div class="radial-progress" style="--value: 100" role="progressbar">
+          100%
+        </div>
+        <div class="radial-progress" style="--value: 100" role="progressbar">
+          100%
+        </div>
+      </div>
+      <div class="border border-dashed p-10">
+        <div class="text-center text-neutral-900 text-4xl font-extrabold p-6">
+          Program Sections
+        </div>
+        <div class="text-center">
+          Certainly! Professional hockey has many talented players, and there
+          are numerous clubs around the world. <br />
+          As of my last knowledge update in January 2024, here are some notable
+          <br />
+          professional hockey clubs and a few players associated with them
+        </div>
+      </div>
+
+      <!--card section start-->
+      <div class="flex justify-center gap-5 mt-14">
+        <div class="relative ...">
+          <img
+            class="w-[573px] h-[338px] bg-neutral-900 bg-opacity-50 rounded-2xl"
+            src="Images/2.png"
+            alt=""
+          />
+          <div class="absolute bottom-10 left-10 ...">
+            <h2 class="text-white text-[28px] font-extrabold">
+              Junior Program
+            </h2>
+            <p class="w-[495px] text-white text-base font-medium">
+              Certainly! Professional hockey has many talented players, and
+              there are numerous clubs around the world. <br />
+              As of my last knowledge update in January 2024, here are some
+              notable
+            </p>
+            <button
+              class="w-[180px] h-[47px] px-[22px] py-2.5 bg-red-500 rounded-lg border border-red-500 justify-center items-center gap-2.5 inline-flex text-center text-white font-bold"
+            >
+              Register Now!
+            </button>
+          </div>
+        </div>
+        <div class="relative ...">
+          <img
+            class="w-[573px] h-[338px] bg-neutral-900 bg-opacity-50 rounded-2xl"
+            src="Images/3.png"
+            alt=""
+          />
+          <div class="absolute bottom-10 left-10 ...">
+            <h2 class="text-white text-[28px] font-extrabold">
+              Teenager Program
+            </h2>
+            <p class="w-[495px] text-white text-base font-medium">
+              Certainly! Professional hockey has many talented players, and
+              there are numerous clubs around the world. <br />
+              As of my last knowledge update in January 2024, here are some
+              notable
+            </p>
+            <button
+              class="w-[180px] h-[47px] px-[22px] py-2.5 bg-red-500 rounded-lg border border-red-500 justify-center items-center gap-2.5 inline-flex text-center text-white font-bold"
+            >
+              Register Now!
+            </button>
+          </div>
+        </div>
+      </div>
+      <!--card 2-->
+      <div class="text-justify">
+        <div class="relative mt-7 ml-14">
+          <img
+            class="w-[1170px] h-[450px] bg-neutral-900 bg-opacity-50 rounded-2xl"
+            src="Images/4.png"
+            alt=""
+          />
+          <div class="absolute bottom-10 left-10 ...">
+            <h2 class="text-white text-[28px] font-extrabold">
+              Teenager Program
+            </h2>
+            <p class="w-[495px] text-white text-base font-medium">
+              Certainly! Professional hockey has many talented players, and
+              there are numerous clubs around the world. <br />
+              As of my last knowledge update in January 2024, here are some
+              notable
+            </p>
+            <button
+              class="w-[180px] h-[47px] px-[22px] py-2.5 bg-red-500 rounded-lg border border-red-500 justify-center items-center gap-2.5 inline-flex text-center text-white font-bold"
+            >
+              Register Now!
+            </button>
+          </div>
+        </div>
+        <div class="border border-dashed p-10 mt-20">
+          <div class="text-center text-neutral-900 text-4xl font-extrabold p-6">
+            Our New Products
+          </div>
+          <div class="text-center">
+            Certainly! Professional hockey has many talented players, and there
+            are numerous clubs around the world. <br />
+            As of my last knowledge update in January 2024, here are some
+            notable
+            <br />
+            professional hockey clubs and a few players associated with them
+          </div>
+        </div>
+      </div>
+
+      <section class="container ">
+        <div class=" grid gap-4  grid-cols-2 ml-6 mt-28">
+          <!--jacket-->
+          <div
+            class="flex w-[573px] h-[218px] rounded-2xl border border-neutral-900 border-opacity-10"
+          >
+            <img src="Images/5.png" alt="" />
+            <div>
+              <ul class="flex gap-5 ml-3 mt-4">
+                <li class="flex gap-2">
+                  <img src="Images/Frame (1).svg" alt="" />5.0
+                </li>
+                <li class="flex gap-2">
+                  <img src="Images/Frame (2).svg" alt="" />20
+                </li>
+                <li class="flex gap-2">
+                  <img src="Images/Frame (3).svg" alt="" />200
+                </li>
+              </ul>
+              <h2 class="text-neutral-900 text-xl ml-4 mt-5 font-extrabold">
+                World Cup Flags Football
+              </h2>
+              <p
+                class="w-[306px] text-neutral-900 ml-4 mt-5 text-opacity-60 text-base font-medium font-['Manrope'] leading-relaxed"
+              >
+                The term "World Cup jersey" typically refers to the official
+                team jerseys
+              </p>
+              <div class="flex gap-10 mt-3">
+                <h2
+                  class="text-red-500 text-lg ml-4 font-extrabold font-['Manrope'] leading-relaxed"
+                >
+                  Price - $22.00
+                </h2>
+                <p
+                  class="text-neutral-900 text-opacity-50 text-base font-medium font-['Manrope']"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6 inline"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                    />
+                  </svg>
+
+                  Delivery Fee : Free
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--ball card2-->
+          <div
+            class="flex  w-[573px] h-[218px] rounded-2xl border border-neutral-900 border-opacity-10"
+          >
+            <img src="Images/6.png" alt="" />
+            <div>
+              <ul class="flex gap-5 ml-3 mt-4">
+                <li class="flex gap-2">
+                  <img src="Images/Frame (1).svg" alt="" />5.0
+                </li>
+                <li class="flex gap-2">
+                  <img src="Images/Frame (2).svg" alt="" />20
+                </li>
+                <li class="flex gap-2">
+                  <img src="Images/Frame (3).svg" alt="" />200
+                </li>
+              </ul>
+              <h2 class="text-neutral-900 text-xl ml-4 mt-5 font-extrabold">
+                World Cup Flags Football
+              </h2>
+              <p
+                class="w-[306px] text-neutral-900 ml-4 mt-5 text-opacity-60 text-base font-medium font-['Manrope'] leading-relaxed"
+              >
+                The term "World Cup jersey" typically refers to the official
+                team jerseys
+              </p>
+              <div class="flex gap-10 mt-3">
+                <h2
+                  class="text-red-500 text-lg ml-4 font-extrabold font-['Manrope'] leading-relaxed"
+                >
+                  Price - $22.00
+                </h2>
+                <p
+                  class="text-neutral-900 text-opacity-50 text-base font-medium font-['Manrope']"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6 inline"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                    />
+                  </svg>
+
+                  Delivery Fee : Free
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- helmet card3 -->
+          <div
+            class="flex w-[573px] h-[218px] rounded-2xl border border-neutral-900 border-opacity-10"
+          >
+            <img src="Images/7.png" alt="" />
+            <div>
+              <ul class="flex gap-5 ml-3 mt-4">
+                <li class="flex gap-2">
+                  <img src="Images/Frame (1).svg" alt="" />5.0
+                </li>
+                <li class="flex gap-2">
+                  <img src="Images/Frame (2).svg" alt="" />20
+                </li>
+                <li class="flex gap-2">
+                  <img src="Images/Frame (3).svg" alt="" />200
+                </li>
+              </ul>
+              <h2 class="text-neutral-900 text-xl ml-4 mt-5 font-extrabold">
+                World Cup Flags Football
+              </h2>
+              <p
+                class="w-[306px] text-neutral-900 ml-4 mt-5 text-opacity-60 text-base font-medium font-['Manrope'] leading-relaxed"
+              >
+                The term "World Cup jersey" typically refers to the official
+                team jerseys
+              </p>
+              <div class="flex gap-10 mt-3">
+                <h2
+                  class="text-red-500 text-lg ml-4 font-extrabold font-['Manrope'] leading-relaxed"
+                >
+                  Price - $22.00
+                </h2>
+                <p
+                  class="text-neutral-900 text-opacity-50 text-base font-medium font-['Manrope']"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6 inline"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                    />
+                  </svg>
+
+                  Delivery Fee : Free
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--teshirt card4-->
+
+          <div
+            class="flex w-[573px] h-[218px] rounded-2xl border border-neutral-900 border-opacity-10"
+          >
+            <img src="Images/8.png" alt="" />
+            <div>
+              <ul class="flex gap-5 ml-3 mt-4">
+                <li class="flex gap-2">
+                  <img src="Images/Frame (1).svg" alt="" />5.0
+                </li>
+                <li class="flex gap-2">
+                  <img src="Images/Frame (2).svg" alt="" />20
+                </li>
+                <li class="flex gap-2">
+                  <img src="Images/Frame (3).svg" alt="" />200
+                </li>
+              </ul>
+              <h2 class="text-neutral-900 text-xl ml-4 mt-5 font-extrabold">
+                World Cup Flags Football
+              </h2>
+              <p
+                class="w-[306px] text-neutral-900 ml-4 mt-5 text-opacity-60 text-base font-medium font-['Manrope'] leading-relaxed"
+              >
+                The term "World Cup jersey" typically refers to the official
+                team jerseys
+              </p>
+              <div class="flex gap-10 mt-3">
+                <h2
+                  class="text-red-500 text-lg ml-4 font-extrabold font-['Manrope'] leading-relaxed"
+                >
+                  Price - $22.00
+                </h2>
+                <p
+                  class="text-neutral-900 text-opacity-50 text-base font-medium font-['Manrope']"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6 inline"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                    />
+                  </svg>
+
+                  Delivery Fee : Free
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--card 5-->
+          <div
+            class="flex w-[573px] h-[218px] rounded-2xl border border-neutral-900 border-opacity-10"
+          >
+            <img src="Images/9.png" alt="" />
+            <div>
+              <ul class="flex gap-5 ml-3 mt-4">
+                <li class="flex gap-2">
+                  <img src="Images/Frame (1).svg" alt="" />5.0
+                </li>
+                <li class="flex gap-2">
+                  <img src="Images/Frame (2).svg" alt="" />20
+                </li>
+                <li class="flex gap-2">
+                  <img src="Images/Frame (3).svg" alt="" />200
+                </li>
+              </ul>
+              <h2 class="text-neutral-900 text-xl ml-4 mt-5 font-extrabold">
+                World Cup Flags Football
+              </h2>
+              <p
+                class="w-[306px] text-neutral-900 ml-4 mt-5 text-opacity-60 text-base font-medium font-['Manrope'] leading-relaxed"
+              >
+                The term "World Cup jersey" typically refers to the official
+                team jerseys
+              </p>
+              <div class="flex gap-10 mt-3">
+                <h2
+                  class="text-red-500 text-lg ml-4 font-extrabold font-['Manrope'] leading-relaxed"
+                >
+                  Price - $22.00
+                </h2>
+                <p
+                  class="text-neutral-900 text-opacity-50 text-base font-medium font-['Manrope']"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6 inline"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                    />
+                  </svg>
+
+                  Delivery Fee : Free
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--card 6-->
+          <div
+            class="flex w-[573px] h-[218px] rounded-2xl border border-neutral-900 border-opacity-10"
+          >
+            <img src="Images/10.png" alt="" />
+            <div>
+              <ul class="flex gap-5 ml-3 mt-4">
+                <li class="flex gap-2">
+                  <img src="Images/Frame (1).svg" alt="" />5.0
+                </li>
+                <li class="flex gap-2">
+                  <img src="Images/Frame (2).svg" alt="" />20
+                </li>
+                <li class="flex gap-2">
+                  <img src="Images/Frame (3).svg" alt="" />200
+                </li>
+              </ul>
+              <h2 class="text-neutral-900 text-xl ml-4 mt-5 font-extrabold">
+                World Cup Flags Football
+              </h2>
+              <p
+                class="w-[306px] text-neutral-900 ml-4 mt-5 text-opacity-60 text-base font-medium font-['Manrope'] leading-relaxed"
+              >
+                The term "World Cup jersey" typically refers to the official
+                team jerseys
+              </p>
+              <div class="flex gap-10 mt-3">
+                <h2
+                  class="text-red-500 text-lg ml-4 font-extrabold font-['Manrope'] leading-relaxed"
+                >
+                  Price - $22.00
+                </h2>
+                <p
+                  class="text-neutral-900 text-opacity-50 text-base font-medium font-['Manrope']"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6 inline"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                    />
+                  </svg>
+
+                  Delivery Fee : Free
+                </p>
+              </div>
+            </div>
+        </div>
+      </section>
+      <div class="border border-dashed p-10 mt-20">
+        <div class="text-center text-neutral-900 text-4xl font-extrabold p-6">
+          Clients Question
+        </div>
+        <div class="text-center">
+          Certainly! Professional hockey has many talented players, and there
+          are numerous clubs around the world. <br />
+          As of my last knowledge update in January 2024, here are some
+          notable
+          <br />
+          professional hockey clubs and a few players associated with them
+        </div>
+      </div>
+    </div>
+    <section>
+      <div class="flex  justify-between mt-10">
+
+        <div>
+          <img  class="w-[441px] h-[470px] rounded-2xl" src="Images/11.png" alt="">
+        </div>
+
+        <div class="flex flex-col ">
+          <div class="collapse collapse-plus ">
+            <input type="radio" name="my-accordion-3" checked="checked" /> 
+            <div class="collapse-title text-neutral-900 font-['Manrope'] text-xl font-bold">
+              Our Equipment
+            </div>
+            <div class="collapse-content w-[518px] text-neutral-900 text-opacity-60 text-base font-normal font-['Manrope'] leading-relaxed"> 
+              <p>The term "World Cup jersey" typically refers to the official team jerseys</p>
+            </div>
+            <div class="collapse collapse-plus ">
+              <input type="radio" name="my-accordion-3" /> 
+              <div class="collapse-title  text-neutral-900 font-['Manrope'] text-xl font-bold">
+                Hockey Training
+              </div>
+              <div class="collapse-content w-[518px] text-neutral-900 text-opacity-60 text-base font-normal font-['Manrope'] leading-relaxed"> 
+                <p>The term "World Cup jersey" typically refers to the official team jerseys</p>
+              </div>
+            </div>
+          </div>
+          <div class="collapse collapse-plus ">
+            <input type="radio" name="my-accordion-3" /> 
+            <div class="collapse-title  text-neutral-900 font-['Manrope'] text-xl font-bold">
+              Hockey Training
+            </div>
+            <div class="collapse-content w-[518px] text-neutral-900 text-opacity-60 text-base font-normal font-['Manrope'] leading-relaxed"> 
+              <p>The term "World Cup jersey" typically refers to the official team jerseys</p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus ">
+            <input type="radio" name="my-accordion-3" /> 
+            <div class="collapse-title  text-neutral-900 font-['Manrope'] text-xl font-bold">
+              Private Lessons
+            </div>
+            <div class="collapse-content w-[518px] text-neutral-900 text-opacity-60 text-base font-normal font-['Manrope'] leading-relaxed"> 
+              <p>The term "World Cup jersey" typically refers to the official team jerseys</p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus">
+            <input type="radio" name="my-accordion-3" /> 
+            <div class="collapse-title  text-neutral-900 font-['Manrope'] text-xl font-bold">
+              Ski Touring
+            </div>
+            <div class="collapse-content w-[518px] text-neutral-900 text-opacity-60 text-base font-normal font-['Manrope'] leading-relaxed"> 
+              <p>The term "World Cup jersey" typically refers to the official team jerseys</p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus ">
+            <input type="radio" name="my-accordion-3" /> 
+            <div class="collapse-title  text-neutral-900 font-['Manrope'] text-xl font-bold">
+              Booking
+            </div>
+            <div class="collapse-content w-[518px] text-neutral-900 text-opacity-60 text-base font-normal font-['Manrope'] leading-relaxed"> 
+              <p>The term "World Cup jersey" typically refers to the official team jerseys</p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus ">
+            <input type="radio" name="my-accordion-3" /> 
+            <div class="collapse-title  text-neutral-900 font-['Manrope'] text-xl font-bold">
+              Pricings
+            </div>
+            <div class="collapse-content w-[518px] text-neutral-900 text-opacity-60 text-base font-normal font-['Manrope'] leading-relaxed"> 
+              <p>The term "World Cup jersey" typically refers to the official team jerseys</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="border border-dashed p-10 mt-20">
+      <div class="text-center text-neutral-900 text-4xl font-extrabold p-6">
+        Get In Touch
+      </div>
+      <div class="text-center">
+        Certainly! Professional hockey has many talented players, and there
+        are numerous clubs around the world. <br />
+        As of my last knowledge update in January 2024, here are some
+        notable
+        <br />
+        professional hockey clubs and a few players associated with them
+      </div>
+    </div>
+  </div>
+ 
+
+    </main>
+
+    <footer class="footer footer-center p-4 text-base-content">
+      <aside
+        class="w-[1170px] h-[150px] bg-neutral-900 bg-opacity-5 rounded-xl"
+      >
+        <p class="text-center text-neutral-900 text-2xl font-extrabold">
+          Social Media
+        </p>
+        <img src="../hockey/icone/Social.svg" alt="" />
+      </aside>
+    </footer>
+
+    <footer class="footer p-10 bg-neutral text-neutral-content">
+      <nav>
+        <div class="text-white text-[28px] font-extrabold">Get In Touch</div>
+        <div
+          class="w-[346px] text-white text-opacity-60 text-base font-medium leading-relaxed"
+        >
+          Dit amet consectetur. Condimentum adipiscing aliquam turpis placerat
+          dolor. Purus urna in sit nullam proin.
+        </div>
+        <div
+          class="w-6 h-6 relative flex-col justify-start items-start inline-flex"
+        >
+          <div class="text-white text-opacity-80 text-base font-medium">
+            hockeys@support.com
+          </div>
+        </div>
+
+        <div class="text-white text-opacity-80 text-base font-medium">
+          (+62) 123-321-543
+        </div>
+      </nav>
+      <nav>
+        <div class="text-white text-lg font-bold">Company</div>
+        <div
+          class="text-white text-opacity-60 text-base font-medium leading-10"
+        >
+          About us<br />Leadership<br />Careers<br />News & Article<br />Legal
+          Notice
+        </div>
+      </nav>
+      <nav>
+        <div class="text-white text-lg font-bold">Support</div>
+        <div
+          class="text-white text-opacity-60 text-base font-medium leading-10"
+        >
+          Help Center<br />FAQ<br />Ticket Support<br />Contact Us
+        </div>
+      </nav>
+      <nav>
+        <div class="text-white text-lg font-bold">Services</div>
+        <div
+          class="text-white text-opacity-60 text-base font-medium font- leading-10"
+        >
+          Academy<br />Group Lesson<br />Private Lesson<br />Hockeys for kids<br />Hockeys
+          for Adult
+        </div>
+      </nav>
+    </footer>
   </body>
 </html>
